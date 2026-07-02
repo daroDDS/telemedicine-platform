@@ -18,5 +18,168 @@
       ]
     },
     "floor": { "adult": 4, "pregnant": 2, "child": 3 }
+  },
+
+  "fever": {
+    "label": "Fever",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["stiff_neck", "non_fading_rash", "confusion", "difficulty_breathing", "very_low_responsiveness"] },
+        { "level": 2, "signs": ["very_high_fever", "severe_weakness", "dehydration", "cannot_keep_fluids"] },
+        { "level": 3, "signs": ["persistent_fever_days"] },
+        { "level": 4, "signs": ["mild_fever_minor_cause"] },
+        { "level": 5, "signs": ["mild_short_fever"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["stiff_neck", "non_fading_rash", "confusion", "difficulty_breathing", "very_low_responsiveness", "abdominal_pain", "vaginal_bleeding"] },
+        { "level": 2, "signs": ["high_fever"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["stiff_neck", "non_fading_rash", "fast_breathing", "convulsion", "floppy", "infant_wont_feed"] },
+        { "level": 2, "signs": ["infant_under_3m_any_fever", "high_fever_lethargy"] },
+        { "level": 3, "signs": ["fever_days_alert"] },
+        { "level": 4, "signs": ["mild_fever_playful"] }
+      ]
+    },
+    "floor": { "adult": 5, "pregnant": 2, "child": 4 }
+  },
+
+  "cough_breathing": {
+    "label": "Cough and difficulty breathing",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["severe_breathless_rest", "blue_lips", "cannot_speak_sentences", "collapse"] },
+        { "level": 2, "signs": ["breathless_mild_effort", "fast_breathing", "chest_tightness", "coughing_blood"] },
+        { "level": 3, "signs": ["persistent_cough_mild_breathless", "fever_not_improving"] },
+        { "level": 4, "signs": ["cough_no_breathing_difficulty"] },
+        { "level": 5, "signs": ["mild_cough_normal_breathing"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["severe_breathless_rest", "blue_lips", "cannot_speak_sentences", "collapse", "sudden_breathless_chest_pain"] },
+        { "level": 2, "signs": ["new_or_worsening_breathless"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["fast_breathing", "chest_indrawing", "blue_lips", "grunting", "floppy"] },
+        { "level": 2, "signs": ["faster_than_normal_breathing", "noisy_breathing_stridor", "infant_feeding_poorly"] },
+        { "level": 3, "signs": ["cough_mild_breathing_normal"] }
+      ]
+    },
+    "floor": { "adult": 5, "pregnant": 2, "child": 3 }
+  },
+
+  "headache": {
+    "label": "Headache",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["worst_ever_headache", "stiff_neck_fever_rash", "confusion", "weakness_one_side", "trouble_speaking", "after_head_injury"] },
+        { "level": 2, "signs": ["severe_headache_vomiting", "vision_changes"] },
+        { "level": 3, "signs": ["persistent_recurrent_headache"] },
+        { "level": 4, "signs": ["mild_moderate_clear_cause"] },
+        { "level": 5, "signs": ["mild_headache_responds_rest"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["vision_changes", "upper_abdominal_pain", "swelling", "worst_ever_headache", "stiff_neck_fever_rash", "confusion", "weakness_one_side", "trouble_speaking", "after_head_injury"] },
+        { "level": 2, "signs": ["new_significant_headache"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["stiff_neck", "non_fading_rash", "fever", "convulsion", "drowsiness_hard_to_wake", "after_head_injury"] },
+        { "level": 2, "signs": ["severe_headache_repeated_vomiting", "marked_drowsiness"] },
+        { "level": 3, "signs": ["recurrent_persistent_headache_alert"] },
+        { "level": 4, "signs": ["mild_headache_clear_cause_playful"] }
+      ]
+    },
+    "floor": { "adult": 5, "pregnant": 2, "child": 4 }
+  },
+
+  "abdominal_pain": {
+    "label": "Abdominal pain",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["rigid_tender_belly", "vomiting_blood", "bloody_stools", "signs_of_shock"] },
+        { "level": 2, "signs": ["severe_persistent_pain", "pain_high_fever", "cannot_keep_fluids"] },
+        { "level": 3, "signs": ["moderate_pain_day_or_more"] },
+        { "level": 4, "signs": ["mild_pain_minor_cause"] },
+        { "level": 5, "signs": ["mild_brief_pain"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["vaginal_bleeding", "severe_constant_pain", "pain_dizziness_fainting", "severe_headache_vision"] },
+        { "level": 2, "signs": ["new_significant_abdominal_pain"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["rigid_belly", "repeated_vomiting_green", "blood_in_stool", "floppy"] },
+        { "level": 2, "signs": ["persistent_vomiting", "high_fever_unwell"] },
+        { "level": 3, "signs": ["moderate_pain_alert_eating"] },
+        { "level": 4, "signs": ["mild_brief_pain_playful"] }
+      ]
+    },
+    "floor": { "adult": 5, "pregnant": 2, "child": 4 }
+  },
+
+  "diarrhea_vomiting": {
+    "label": "Diarrhea and vomiting",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["severe_dehydration", "blood_stool_weakness"] },
+        { "level": 2, "signs": ["cannot_keep_fluids", "high_fever", "persistent_blood"] },
+        { "level": 3, "signs": ["several_days_mild_dehydration"] },
+        { "level": 4, "signs": ["mild_symptoms_drinking"] },
+        { "level": 5, "signs": ["brief_mild_upset"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["severe_dehydration", "vomiting_abdominal_pain", "vaginal_bleeding"] },
+        { "level": 2, "signs": ["persistent_vomiting_cannot_keep_fluids"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["dehydration_signs", "blood_stool_unwell", "infant_wont_feed"] },
+        { "level": 2, "signs": ["frequent_diarrhea_vomiting", "reduced_urine", "under_6m_significant"] },
+        { "level": 3, "signs": ["mild_symptoms_drinking_alert"] }
+      ]
+    },
+    "floor": { "adult": 5, "pregnant": 2, "child": 3 }
+  },
+
+  "injury_bleeding": {
+    "label": "Serious injury and bleeding",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["heavy_bleeding_wont_stop", "deep_wound", "head_injury_confusion", "fracture_deformity", "signs_of_shock"] },
+        { "level": 2, "signs": ["moderate_bleeding_controlled", "injury_significant_pain"] },
+        { "level": 3, "signs": ["minor_wound_stitches"] },
+        { "level": 4, "signs": ["small_cut_bruise"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["abdominal_injury", "heavy_bleeding", "head_injury_confusion", "signs_of_shock"] },
+        { "level": 2, "signs": ["fall_or_trauma_abdomen"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["heavy_bleeding", "head_injury_drowsiness", "fracture_deformity", "floppy"] },
+        { "level": 3, "signs": ["minor_wound_alert"] }
+      ]
+    },
+    "floor": { "adult": 4, "pregnant": 2, "child": 3 }
+  },
+  
+  "weakness_dizziness": {
+    "label": "General weakness and dizziness",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["weakness_one_side", "trouble_speaking", "facial_droop", "fainting_chest_pain_breathless", "confusion", "very_low_responsiveness"] },
+        { "level": 2, "signs": ["severe_weakness_cannot_stand", "repeated_fainting", "irregular_heartbeat_symptoms"] },
+        { "level": 3, "signs": ["ongoing_tiredness_dizziness_days"] },
+        { "level": 4, "signs": ["mild_dizziness_clear_cause"] },
+        { "level": 5, "signs": ["brief_mild_dizziness_resolved"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["weakness_one_side", "trouble_speaking", "facial_droop", "fainting_abdominal_pain_bleeding", "severe_headache_vision", "confusion", "very_low_responsiveness"] },
+        { "level": 2, "signs": ["repeated_dizziness_fainting"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["floppy", "very_drowsy_hard_to_wake", "convulsion", "weakness_one_side"] },
+        { "level": 2, "signs": ["very_lethargic_rousable", "cannot_stand_sit", "repeated_fainting"] },
+        { "level": 3, "signs": ["mild_dizziness_alert"] },
+        { "level": 4, "signs": ["brief_mild_dizziness_clear_cause"] }
+      ]
+    },
+    "floor": { "adult": 5, "pregnant": 2, "child": 4 }
   }
 }
