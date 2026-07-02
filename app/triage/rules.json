@@ -1,0 +1,22 @@
+{
+  "chest_pain": {
+    "label": "Chest pain",
+    "groups": {
+      "adult": [
+        { "level": 1, "signs": ["breathlessness", "pain_spreading", "cold_sweat", "faintness", "crushing_pain", "blue_colour", "collapse"] },
+        { "level": 2, "signs": ["severe_pain", "known_heart_disease"] },
+        { "level": 3, "signs": ["moderate_pain_persistent"] },
+        { "level": 4, "signs": ["mild_muscular_pain"] }
+      ],
+      "pregnant": [
+        { "level": 1, "signs": ["breathlessness", "pain_spreading", "cold_sweat", "faintness", "crushing_pain", "blue_colour", "collapse", "severe_headache", "vision_changes", "upper_abdominal_pain"] },
+        { "level": 2, "signs": ["severe_pain", "new_significant_pain"] }
+      ],
+      "child": [
+        { "level": 1, "signs": ["fast_breathing", "blue_lips", "grunting", "floppy"] },
+        { "level": 3, "signs": ["pain_after_minor_injury", "mild_cough"] }
+      ]
+    },
+    "floor": { "adult": 4, "pregnant": 2, "child": 3 }
+  }
+}
