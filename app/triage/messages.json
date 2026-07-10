@@ -1,0 +1,20 @@
+{
+  "fr": {
+    "1": "Urgence absolue — Consultez immédiatement les urgences ou appelez de l'aide.",
+    "2": "Très urgent — Consultez dans les prochaines heures.",
+    "3": "Urgence relative — Voir un médecin dans environ 24 à 48 heures.",
+    "4": "Standard — Organiser une consultation médicale normale.",
+    "5": "Autosoins — Peut être pris en charge à domicile avec surveillance. Consultez si cela s'aggrave.",
+    "unknown": "Nous n'avons pas pu identifier votre problème — par précaution, consultez un médecin.",
+    "disclaimer": "Ceci n'est pas un diagnostic médical."
+  },
+  "en": {
+    "1": "Emergency — Seek emergency care or call for help immediately.",
+    "2": "Very urgent — Seek care within a few hours.",
+    "3": "Urgent — See a doctor within roughly 24–48 hours.",
+    "4": "Standard — Arrange a normal doctor's visit.",
+    "5": "Self-care — Manage at home with monitoring. Seek care if it worsens.",
+    "unknown": "We could not identify your problem — as a precaution, please see a doctor.",
+    "disclaimer": "This is not a medical diagnosis."
+  }
+}

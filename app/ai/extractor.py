@@ -35,6 +35,7 @@ From the patient message, identify:
 1. "complaint": the single best-matching complaint key, or null if none fits.
 2. "group": one of "adult", "pregnant", or "child". If unclear, use "adult".
 3. "signs": a list of sign codes that the patient's message clearly indicates.
+4. "language": the language the patient wrote in — "fr" for French, "en" for English. If unsure, use "fr".
 
 You MUST only use codes from this exact list. Do not invent codes.
 
@@ -44,7 +45,7 @@ Valid complaints and their allowed signs:
 Patient message: "{patient_text}"
 
 Reply with ONLY a JSON object, no other text, in exactly this format:
-{{"complaint": "...", "group": "...", "signs": ["..."]}}"""
+{{"complaint": "...", "group": "...", "signs": ["..."], "language": "fr"}}"""
 
     raw = ask(prompt)
 
@@ -59,7 +60,7 @@ Reply with ONLY a JSON object, no other text, in exactly this format:
     try:
         result = json.loads(cleaned)
     except json.JSONDecodeError:
-        return {"complaint": None, "group": "adult", "signs": [],
+        return {"complaint": None, "group": "adult", "signs": [], "language": "fr",
                 "error": "Could not parse AI response", "raw": raw}
 
     return result

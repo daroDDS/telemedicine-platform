@@ -1,49 +1,60 @@
+import json
+from pathlib import Path
+
 from app.ai.extractor import extract
 from app.triage.engine import assess
 
-# Care destinations for each urgency level.
-DESTINATIONS = {
-    1: "Emergency — seek emergency care or call for help immediately.",
-    2: "Very urgent — seek care within a few hours.",
-    3: "Urgent — see a doctor within roughly 24–48 hours.",
-    4: "Standard — arrange a normal doctor's visit.",
-    5: "Self-care — manage at home with monitoring. Seek care if it worsens.",
-}
+MESSAGES_PATH = Path(__file__).parent / "messages.json"
+with open(MESSAGES_PATH, "r", encoding="utf-8") as f:
+    MESSAGES = json.load(f)
+
+DEFAULT_LANGUAGE = "fr"
+
+
+def _messages_for(language: str) -> dict:
+    """Return the message set for a language, falling back to French."""
+    return MESSAGES.get(language, MESSAGES[DEFAULT_LANGUAGE])
 
 
 def triage(patient_text: str) -> dict:
     """
-    Full pipeline: patient's free text -> urgency level and care destination.
+    Full pipeline: patient's free text -> urgency level and care destination,
+    replied in the patient's own language.
 
-    The AI only extracts codes. The rule engine makes the medical decision.
+    The AI only extracts codes and detects language.
+    The rule engine makes the medical decision.
     """
-    # 1. AI reads the language and extracts structured codes.
     extracted = extract(patient_text)
 
     complaint = extracted.get("complaint")
     group = extracted.get("group", "adult")
     signs = extracted.get("signs", [])
+    language = extracted.get("language", DEFAULT_LANGUAGE)
 
-    # 2. Safety: if the AI could not identify a complaint, default to caution.
+    texts = _messages_for(language)
+
+    # Safety: no complaint identified -> cautious default, in their language.
     if not complaint:
         return {
             "level": 3,
-            "destination": DESTINATIONS[3],
+            "destination": texts["unknown"],
+            "disclaimer": texts["disclaimer"],
             "complaint": None,
             "group": group,
             "signs": signs,
-            "note": "Could not identify the complaint — defaulting to a doctor's visit.",
+            "language": language,
         }
 
-    # 3. The rule engine decides the urgency level.
     result = assess(complaint, group, signs)
     level = result["level"]
 
     return {
         "level": level,
-        "destination": DESTINATIONS.get(level, DESTINATIONS[3]),
+        "destination": texts[str(level)],
+        "disclaimer": texts["disclaimer"],
         "complaint": result.get("complaint"),
         "group": group,
         "signs": signs,
+        "language": language,
         "matched_levels": result.get("matched", []),
     }

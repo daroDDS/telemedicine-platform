@@ -5,12 +5,12 @@ messages = [
     "mon bébé a de la fièvre et ne veut pas manger",
     "I have a mild headache that goes away when I rest",
     "je suis enceinte et j'ai des pertes de liquide avec des douleurs au ventre",
+    "I fell and I have a small cut on my knee",
 ]
 
 for msg in messages:
-    result = triage(msg)
+    r = triage(msg)
     print(f"\nPatient: {msg}")
-    print(f"  Complaint : {result['complaint']}")
-    print(f"  Group     : {result['group']}")
-    print(f"  Signs     : {result['signs']}")
-    print(f"  → LEVEL {result['level']}: {result['destination']}")
+    print(f"  Lang  : {r['language']}  | Group: {r['group']}  | Signs: {r['signs']}")
+    print(f"  → NIVEAU/LEVEL {r['level']}: {r['destination']}")
+    print(f"  {r['disclaimer']}")
