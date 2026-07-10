@@ -46,3 +46,27 @@ def assess(complaint: str, group: str, reported_signs: list[str]) -> dict:
         "group": group,
         "matched": matched_levels,
     }
+
+def unresolved_danger_signs(complaint: str, group: str,
+                            present: list[str], absent: list[str]) -> list[str]:
+    """
+    Return the L1/L2 red-flag signs for this complaint+group that have
+    NOT yet been confirmed present or absent. These are the dangerous
+    signs we must ask about before giving any reassuring result.
+    """
+    if complaint not in RULES:
+        return []
+    complaint_rules = RULES[complaint]
+    if group not in complaint_rules["groups"]:
+        return []
+
+    known = set(present) | set(absent)
+    unresolved = []
+
+    for rule in complaint_rules["groups"][group]:
+        if rule["level"] in (1, 2):          # only the dangerous levels
+            for sign in rule["signs"]:
+                if sign not in known and sign not in unresolved:
+                    unresolved.append(sign)
+
+    return unresolved
