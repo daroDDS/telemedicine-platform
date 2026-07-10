@@ -10,16 +10,21 @@ def run(messages):
             print(f"  ASK: {turn['question']}")
         else:
             r = turn["result"]
-            print(f"  RESULT -> Level {r['level']}: {r['destination']}")
+            print(f"  RESULT -> Level {r['level']} ({r.get('group')}): {r['destination']}")
 
-print("=== Scenario 1: vague headache, then all clear ===")
+print("=== Adult, led with symptom, then danger sign ===")
 run([
     "j'ai mal à la tête",
-    "non, rien de tout ça, juste un mal de tête léger",
+    "30 ans",
+    "un homme",
+    "oui j'ai la nuque raide et de la fièvre",
 ])
 
-print("\n=== Scenario 2: vague headache, then a danger sign ===")
+print("\n=== Pregnant woman ===")
 run([
-    "j'ai mal à la tête",
-    "oui j'ai la nuque raide et de la fièvre",
+    "j'ai mal au ventre",
+    "28 ans",
+    "une femme",
+    "oui je suis enceinte",
+    "non, pas de saignement ni de perte",
 ])

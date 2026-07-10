@@ -128,3 +128,46 @@ Reply with ONLY a JSON object in exactly this format:
     except json.JSONDecodeError:
         # If we can't parse, treat nothing as resolved (we'll ask again).
         return {"present": [], "absent": []}
+    
+def interpret_age(reply: str) -> float:
+    """Extract the patient's age in years from their reply. Returns None if unclear."""
+    prompt = f"""Extract the person's age in YEARS from this message: "{reply}"
+
+Rules:
+- If they give months (e.g. "6 mois", "3 months"), convert to years (6 months = 0.5).
+- Reply with ONLY a number (e.g. 30, 0.5, 8). No text.
+- If no age can be determined, reply with exactly: null"""
+    raw = ask(prompt).strip()
+    try:
+        cleaned = raw.replace("`", "").strip()
+        if cleaned.lower() == "null":
+            return None
+        return float(cleaned)
+    except (ValueError, AttributeError):
+        return None
+
+
+def interpret_gender(reply: str) -> str:
+    """Return 'male', 'female', or None."""
+    prompt = f"""From this message, is the person male or female? Message: "{reply}"
+
+Reply with ONLY one word: male, female, or unknown."""
+    raw = ask(prompt).strip().lower().replace("`", "")
+    if "female" in raw or "femme" in raw:
+        return "female"
+    if "male" in raw or "homme" in raw:
+        return "male"
+    return None
+
+
+def interpret_yes_no(reply: str) -> bool:
+    """Return True for yes, False for no, None if unclear."""
+    prompt = f"""Does this message mean YES or NO? Message: "{reply}"
+
+Reply with ONLY one word: yes, no, or unclear."""
+    raw = ask(prompt).strip().lower().replace("`", "")
+    if raw.startswith("yes") or raw.startswith("oui"):
+        return True
+    if raw.startswith("no") or raw.startswith("non"):
+        return False
+    return None
