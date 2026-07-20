@@ -5,6 +5,7 @@ from app.ai.extractor import (
 from app.triage.engine import assess, unresolved_danger_signs
 from app.triage.intake import next_intake_step
 from app.triage.pipeline import _messages_for, DEFAULT_LANGUAGE
+from app.facilities.finder import recommend
 
 # Intake question wording, per language.
 INTAKE_QUESTIONS = {
@@ -25,16 +26,18 @@ INTAKE_QUESTIONS = {
 
 def start_state() -> dict:
     return {
-        "phase": "intake",          # intake -> symptoms -> dialogue -> done
+        "phase": "intake",
         "language": DEFAULT_LANGUAGE,
-        "facts": {},                 # age, gender, is_pregnant
+        "facts": {},
         "group": None,
-        "pending_intake": None,      # which intake field we just asked
+        "pending_intake": None,
         "complaint": None,
         "present": [],
         "absent": [],
         "asked": [],
-        "first_message": None,       # symptom text captured before intake done
+        "first_message": None,
+        "lat": None,
+        "lon": None,
     }
 
 
@@ -42,7 +45,11 @@ def _q(language, key):
     return INTAKE_QUESTIONS.get(language, INTAKE_QUESTIONS[DEFAULT_LANGUAGE])[key]
 
 
-def step(state: dict, patient_message: str) -> dict:
+def step(state: dict, patient_message: str, lat: float = None, lon: float = None) -> dict:
+    # Remember the patient's location if the browser provided it.
+    if lat is not None and lon is not None:
+        state["lat"] = lat
+        state["lon"] = lon
     # Detect language from the very first message, and capture any symptom text.
     if state["language"] == DEFAULT_LANGUAGE and state["phase"] == "intake" and state["pending_intake"] is None:
         extracted = extract(patient_message)
@@ -125,9 +132,22 @@ def step(state: dict, patient_message: str) -> dict:
         state["phase"] = "done"
         result = assess(state["complaint"], state["group"], state["present"])
         level = result["level"]
-        return {"state": state, "result": {
-            "level": level, "destination": texts[str(level)],
-            "disclaimer": texts["disclaimer"], "complaint": result.get("complaint"),
-            "group": state["group"], "language": state["language"],
+
+        final = {
+            "level": level,
+            "destination": texts[str(level)],
+            "disclaimer": texts["disclaimer"],
+            "complaint": result.get("complaint"),
+            "group": state["group"],
+            "language": state["language"],
             "signs": state["present"],
-        }}
+        }
+
+        # Enrich with facility recommendation if we know where they are.
+        if state.get("lat") is not None and state.get("lon") is not None:
+            final["facilities"] = recommend(level, state["lat"], state["lon"])
+        else:
+            final["facilities"] = None
+            final["facilities_note"] = "no_location"
+
+        return {"state": state, "final_result": final} if False else {"state": state, "result": final}

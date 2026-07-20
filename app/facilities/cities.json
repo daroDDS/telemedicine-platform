@@ -1,0 +1,443 @@
+[
+ {
+  "city": "Dakar",
+  "region": "Dakar",
+  "lat": 14.69342,
+  "lon": -17.44794,
+  "osm_result": "Dakar, Région de Dakar, Sénégal"
+ },
+ {
+  "city": "Pikine",
+  "region": "Dakar",
+  "lat": 14.75154,
+  "lon": -17.39641,
+  "osm_result": "Pikine, Commune de Pikine Ouest, Arrondissement de Pikine-Dagoudane, Département de Pikine, Région de Dakar, Sénégal"
+ },
+ {
+  "city": "Guediawaye",
+  "region": "Dakar",
+  "lat": 14.77712,
+  "lon": -17.39007,
+  "osm_result": "Département de Guédiawaye, Région de Dakar, 15000, Sénégal"
+ },
+ {
+  "city": "Rufisque",
+  "region": "Dakar",
+  "lat": 14.71642,
+  "lon": -17.27384,
+  "osm_result": "Rufisque, Département de Rufisque, Région de Dakar, Sénégal"
+ },
+ {
+  "city": "Bargny",
+  "region": "Dakar",
+  "lat": 14.69383,
+  "lon": -17.22974,
+  "osm_result": "Commune de Bargny, Arrondissement de Sangalkam, Département de Rufisque, Région de Dakar, 20000, Sénégal"
+ },
+ {
+  "city": "Diamniadio",
+  "region": "Dakar",
+  "lat": 14.72022,
+  "lon": -17.18424,
+  "osm_result": "Commune de Diamniadio, Arrondissement de Diamniadio, Département de Rufisque, Région de Dakar, Sénégal"
+ },
+ {
+  "city": "Sebikotane",
+  "region": "Dakar",
+  "lat": 14.74075,
+  "lon": -17.13908,
+  "osm_result": "Commune de Sébikhotane, Arrondissement de Diamniadio, Département de Rufisque, Région de Dakar, Sénégal"
+ },
+ {
+  "city": "Thies",
+  "region": "Thies",
+  "lat": 14.79146,
+  "lon": -16.92561,
+  "osm_result": "Thiès, Commune de Thiès Ouest, Arrondissement de Thiès Sud, Département de Thiès, Région de Thiès, Sénégal"
+ },
+ {
+  "city": "Mbour",
+  "region": "Thies",
+  "lat": 14.42074,
+  "lon": -16.97148,
+  "osm_result": "M'bour, Département de M'bour, Région de Thiès, Sénégal"
+ },
+ {
+  "city": "Tivaouane",
+  "region": "Thies",
+  "lat": 14.95151,
+  "lon": -16.81287,
+  "osm_result": "Tivaouane, Département de Tivaouane, Région de Thiès, Sénégal"
+ },
+ {
+  "city": "Joal-Fadiouth",
+  "region": "Thies",
+  "lat": 14.15463,
+  "lon": -16.83269,
+  "osm_result": "Joal-Fadiouth, Département de M'bour, Région de Thiès, Sénégal"
+ },
+ {
+  "city": "Khombole",
+  "region": "Thies",
+  "lat": 14.76054,
+  "lon": -16.6918,
+  "osm_result": "Khombole, Département de Thiès, Région de Thiès, 21200, Sénégal"
+ },
+ {
+  "city": "Pout",
+  "region": "Thies",
+  "lat": 14.77022,
+  "lon": -17.06112,
+  "osm_result": "Pout, Département de Thiès, Région de Thiès, Sénégal"
+ },
+ {
+  "city": "Kayar",
+  "region": "Thies",
+  "lat": 14.9183,
+  "lon": -17.11931,
+  "osm_result": "Kayar, Département de Thiès, Région de Thiès, 20012, Sénégal"
+ },
+ {
+  "city": "Saint-Louis",
+  "region": "Saint-Louis",
+  "lat": 16.02804,
+  "lon": -16.50487,
+  "osm_result": "Saint-Louis, Département de Saint-Louis, Région de Saint-Louis, Sénégal"
+ },
+ {
+  "city": "Dagana",
+  "region": "Saint-Louis",
+  "lat": 16.51651,
+  "lon": -15.50684,
+  "osm_result": "Dagana, Département de Dagana, Région de Saint-Louis, 32800, Sénégal"
+ },
+ {
+  "city": "Richard-Toll",
+  "region": "Saint-Louis",
+  "lat": 16.46629,
+  "lon": -15.68845,
+  "osm_result": "Richard-Toll, Département de Dagana, Région de Saint-Louis, 32600, Sénégal"
+ },
+ {
+  "city": "Podor",
+  "region": "Saint-Louis",
+  "lat": 16.65271,
+  "lon": -14.95867,
+  "osm_result": "Podor, Département de Podor, Région de Saint-Louis, Sénégal"
+ },
+ {
+  "city": "Ross-Bethio",
+  "region": "Saint-Louis",
+  "lat": 16.27816,
+  "lon": -16.14059,
+  "osm_result": "Ross Béthio, Département de Dagana, Région de Saint-Louis, Sénégal"
+ },
+ {
+  "city": "Diourbel",
+  "region": "Diourbel",
+  "lat": 14.65456,
+  "lon": -16.22782,
+  "osm_result": "Diourbel, Département de Diourbel, Région de Diourbel, 21600, Sénégal"
+ },
+ {
+  "city": "Mbacke",
+  "region": "Diourbel",
+  "lat": 14.79712,
+  "lon": -15.90666,
+  "osm_result": "Mbacké, Département de Mbacké, Région de Diourbel, 22100, Sénégal"
+ },
+ {
+  "city": "Touba",
+  "region": "Diourbel",
+  "lat": 14.86456,
+  "lon": -15.87605,
+  "osm_result": "Touba, Communauté rurale de Touba Mosquée, Arrondissement de Ndame, Département de Mbacké, Région de Diourbel, Sénégal"
+ },
+ {
+  "city": "Bambey",
+  "region": "Diourbel",
+  "lat": 14.69548,
+  "lon": -16.44926,
+  "osm_result": "Bambey, Département de Bambey, Région de Diourbel, Sénégal"
+ },
+ {
+  "city": "Kaolack",
+  "region": "Kaolack",
+  "lat": 14.13881,
+  "lon": -16.07639,
+  "osm_result": "Kaolack, Département de Kaolack, Région de Kaolack, 24000, Sénégal"
+ },
+ {
+  "city": "Guinguineo",
+  "region": "Kaolack",
+  "lat": 14.27218,
+  "lon": -15.94557,
+  "osm_result": "Guinguinéo, Département de Guinguinéo, Région de Kaolack, Sénégal"
+ },
+ {
+  "city": "Nioro du Rip",
+  "region": "Kaolack",
+  "lat": 13.74557,
+  "lon": -15.77475,
+  "osm_result": "Nioro du Rip, Département de Nioro du Rip, Région de Kaolack, Sénégal"
+ },
+ {
+  "city": "Kaffrine",
+  "region": "Kaffrine",
+  "lat": 14.10197,
+  "lon": -15.54843,
+  "osm_result": "Kaffrine, Département de Kaffrine, Région de Kaffrine, Sénégal"
+ },
+ {
+  "city": "Koungheul",
+  "region": "Kaffrine",
+  "lat": 13.97958,
+  "lon": -14.80354,
+  "osm_result": "Koungheul, Département de Koungheul, Région de Kaffrine, Sénégal"
+ },
+ {
+  "city": "Malem Hodar",
+  "region": "Kaffrine",
+  "lat": 14.08779,
+  "lon": -15.29191,
+  "osm_result": "Malem-Hodar, Département de Malem Hodar, Région de Kaffrine, Sénégal"
+ },
+ {
+  "city": "Birkelane",
+  "region": "Kaffrine",
+  "lat": 14.12821,
+  "lon": -15.74694,
+  "osm_result": "Birkelane, Département de Birkelane, Région de Kaffrine, Sénégal"
+ },
+ {
+  "city": "Fatick",
+  "region": "Fatick",
+  "lat": 14.33396,
+  "lon": -16.40422,
+  "osm_result": "Fatick, Département de Fatick, Région de Fatick, Sénégal"
+ },
+ {
+  "city": "Foundiougne",
+  "region": "Fatick",
+  "lat": 14.12635,
+  "lon": -16.46748,
+  "osm_result": "Foundiougne, Département de Foundiougne, Région de Fatick, Sénégal"
+ },
+ {
+  "city": "Gossas",
+  "region": "Fatick",
+  "lat": 14.49124,
+  "lon": -16.06416,
+  "osm_result": "Gossas, Département de Gossas, Région de Fatick, Sénégal"
+ },
+ {
+  "city": "Sokone",
+  "region": "Fatick",
+  "lat": 13.87845,
+  "lon": -16.37253,
+  "osm_result": "Sokone, Département de Foundiougne, Région de Fatick, 24016, Sénégal"
+ },
+ {
+  "city": "Diofior",
+  "region": "Fatick",
+  "lat": 14.18926,
+  "lon": -16.66122,
+  "osm_result": "Diofior, Département de Fatick, Région de Fatick, Sénégal"
+ },
+ {
+  "city": "Passy",
+  "region": "Fatick",
+  "lat": 13.98505,
+  "lon": -16.26062,
+  "osm_result": "Passy, Département de Foundiougne, Région de Fatick, 24012, Sénégal"
+ },
+ {
+  "city": "Louga",
+  "region": "Louga",
+  "lat": 15.777,
+  "lon": -16.06185,
+  "osm_result": "Département de Louga, Région de Louga, 31000, Sénégal"
+ },
+ {
+  "city": "Kebemer",
+  "region": "Louga",
+  "lat": 15.37401,
+  "lon": -16.44972,
+  "osm_result": "Kébémer, Département de Kébémer, Région de Louga, 30800, Sénégal"
+ },
+ {
+  "city": "Linguere",
+  "region": "Louga",
+  "lat": 15.39542,
+  "lon": -15.11531,
+  "osm_result": "Linguère, Département de Linguère, Région de Louga, Sénégal"
+ },
+ {
+  "city": "Dahra",
+  "region": "Louga",
+  "lat": 15.34948,
+  "lon": -15.48097,
+  "osm_result": "Dahra Djoloff, Département de Linguère, Région de Louga, Sénégal"
+ },
+ {
+  "city": "Matam",
+  "region": "Matam",
+  "lat": 15.65656,
+  "lon": -13.25592,
+  "osm_result": "Matam, Département de Matam, Région de Matam, Sénégal"
+ },
+ {
+  "city": "Kanel",
+  "region": "Matam",
+  "lat": 15.49103,
+  "lon": -13.17568,
+  "osm_result": "Kanel, Département de Kanel, Région de Matam, Sénégal"
+ },
+ {
+  "city": "Ourossogui",
+  "region": "Matam",
+  "lat": 15.60648,
+  "lon": -13.3211,
+  "osm_result": "Ourossogui, Département de Matam, Région de Matam, Sénégal"
+ },
+ {
+  "city": "Thilogne",
+  "region": "Matam",
+  "lat": 15.96602,
+  "lon": -13.59401,
+  "osm_result": "Thilogne, Département de Matam, Région de Matam, Sénégal"
+ },
+ {
+  "city": "Semme",
+  "region": "Matam",
+  "lat": 15.19924,
+  "lon": -12.94507,
+  "osm_result": "Semmé, Arrondissement de Orkadiere, Département de Kanel, Région de Matam, Sénégal"
+ },
+ {
+  "city": "Tambacounda",
+  "region": "Tambacounda",
+  "lat": 13.76926,
+  "lon": -13.66829,
+  "osm_result": "Tambacounda, Département de Tambacounda, Région de Tambacounda, 26000, Sénégal"
+ },
+ {
+  "city": "Bakel",
+  "region": "Tambacounda",
+  "lat": 14.90497,
+  "lon": -12.45681,
+  "osm_result": "Bakel, Département de Bakel, Région de Tambacounda, Sénégal"
+ },
+ {
+  "city": "Goudiry",
+  "region": "Tambacounda",
+  "lat": 14.18149,
+  "lon": -12.71516,
+  "osm_result": "Goudiry, Département de Goudiry, Région de Tambacounda, 34206, Sénégal"
+ },
+ {
+  "city": "Koumpentoum",
+  "region": "Tambacounda",
+  "lat": 13.98042,
+  "lon": -14.56113,
+  "osm_result": "Koumpentoum, Département de Koumpentoum, Région de Tambacounda, Sénégal"
+ },
+ {
+  "city": "Kedougou",
+  "region": "Kedougou",
+  "lat": 12.55708,
+  "lon": -12.18557,
+  "osm_result": "Kédougou, Département de Kédougou, Région de Kédougou, 26005, Sénégal"
+ },
+ {
+  "city": "Salemata",
+  "region": "Kedougou",
+  "lat": 12.63213,
+  "lon": -12.81787,
+  "osm_result": "Salemata, Département de Salemata, Région de Kédougou, Sénégal"
+ },
+ {
+  "city": "Saraya",
+  "region": "Kedougou",
+  "lat": 12.83425,
+  "lon": -11.755,
+  "osm_result": "Saraya, Département de Saraya, Région de Kédougou, Sénégal"
+ },
+ {
+  "city": "Kolda",
+  "region": "Kolda",
+  "lat": 12.89212,
+  "lon": -14.9401,
+  "osm_result": "Kolda, Département de Kolda, Région de Kolda, Sénégal"
+ },
+ {
+  "city": "Velingara",
+  "region": "Kolda",
+  "lat": 13.14724,
+  "lon": -14.10758,
+  "osm_result": "Vélingara, Département de Vélingara, Région de Kolda, Sénégal"
+ },
+ {
+  "city": "Medina Yoro Foulah",
+  "region": "Kolda",
+  "lat": 13.29284,
+  "lon": -14.71465,
+  "osm_result": "Médina Yoro Foulah, Département de Médina Yoro Foulah, Région de Kolda, Sénégal"
+ },
+ {
+  "city": "Sedhiou",
+  "region": "Sedhiou",
+  "lat": 12.7099,
+  "lon": -15.55734,
+  "osm_result": "Sédhiou, Département de Sédhiou, Région de Sédhiou, Sénégal"
+ },
+ {
+  "city": "Bounkiling",
+  "region": "Sedhiou",
+  "lat": 13.04086,
+  "lon": -15.69605,
+  "osm_result": "Bounkiling, Département de Bounkiling, Région de Sédhiou, Sénégal"
+ },
+ {
+  "city": "Goudomp",
+  "region": "Sedhiou",
+  "lat": 12.57294,
+  "lon": -15.87634,
+  "osm_result": "Goudomp, Département de Goudomp, Région de Sédhiou, Sénégal"
+ },
+ {
+  "city": "Ziguinchor",
+  "region": "Ziguinchor",
+  "lat": 12.56349,
+  "lon": -16.27246,
+  "osm_result": "Ziguinchor, Département de Ziguinchor, Région de Ziguinchor, Sénégal"
+ },
+ {
+  "city": "Bignona",
+  "region": "Ziguinchor",
+  "lat": 12.80113,
+  "lon": -16.22897,
+  "osm_result": "Bignona, Département de Bignona, Région de Ziguinchor, Sénégal"
+ },
+ {
+  "city": "Oussouye",
+  "region": "Ziguinchor",
+  "lat": 12.48896,
+  "lon": -16.54328,
+  "osm_result": "Oussouye, Département d'Oussouye, Région de Ziguinchor, Sénégal"
+ },
+ {
+  "city": "Thionck Essyl",
+  "region": "Ziguinchor",
+  "lat": 12.78208,
+  "lon": -16.50592,
+  "osm_result": "Tionk Essil, Département de Bignona, Région de Ziguinchor, Sénégal"
+ },
+ {
+  "city": "Cap Skirring",
+  "region": "Ziguinchor",
+  "lat": 12.38153,
+  "lon": -16.7445,
+  "osm_result": "Cap Skirring, Communauté rurale de Diembéring, Arrondissement de Kabrousse, Département d'Oussouye, Région de Ziguinchor, Sénégal"
+ }
+]

@@ -1,0 +1,8 @@
+match_id,region,name,query_used,lat,lon,osm_result,VERIFIED
+241,Dakar,dalal jamm,"dalal jamm, Dakar, Senegal",14.76243,-17.46276,"Dalal Jamm, Rue BCEAO, Dakar",yes
+788,Dakar,suma,"hopital suma, Dakar, Senegal",14.71048,-17.46988,"Clinique Suma Assistance, Sacre Coeur 3, Dakar - NAME MISMATCH: verify",
+1580,Kaffrine,thierno birahim ndao,"hopital thierno birahim ndao, Kaffrine, Senegal",14.10415,-15.52755,"Hopital Regional Thierno Birahim Ndao, Kaffrine",yes
+1972,Kedougou,amath dansokho kedougou,manual_pluscode,12.54054,-12.15117,"CHR Amath Dansokho (Plus Code GRQX+495)",yes
+3065,Matam,abdoul cisse kane des agnam,"hopital abdoul cisse kane des agnam, Matam, Senegal",15.98771,-13.65367,"Hopital Abdoul Cisse Kane, Agnam, Matam",yes
+3429,Saint-Louis,richard toll,"hopital richard toll, Saint-Louis, Senegal",16.46863,-15.68949,"Etablissement public de sante de Richard Toll",yes
+4041,Thies,barthimee thies,"hopital barthimee thies, Thies, Senegal",14.77492,-16.93848,"Hopital Barthimee, Thies",yes

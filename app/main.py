@@ -13,9 +13,9 @@ app = FastAPI(
 
 class ChatRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=1000)
-    session_id: Optional[str] = Field(
-        None, description="Omit to start a new conversation; include to continue one."
-    )
+    session_id: Optional[str] = Field(None)
+    lat: Optional[float] = Field(None, ge=-90, le=90, description="Patient latitude (from browser GPS)")
+    lon: Optional[float] = Field(None, ge=-180, le=180, description="Patient longitude")
 
 
 @app.get("/")
@@ -36,7 +36,7 @@ def chat(request: ChatRequest):
     state = get_state(session_id)
 
     # Advance the conversation by one turn.
-    turn = step(state, request.message)
+    turn = step(state, request.message, lat=request.lat, lon=request.lon)
     save_state(session_id, turn["state"])
 
     # Build the response: either a follow-up question or a final result.

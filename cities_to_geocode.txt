@@ -1,0 +1,63 @@
+Dakar|Dakar
+Pikine|Dakar
+Guediawaye|Dakar
+Rufisque|Dakar
+Bargny|Dakar
+Diamniadio|Dakar
+Sebikotane|Dakar
+Thies|Thies
+Mbour|Thies
+Tivaouane|Thies
+Joal-Fadiouth|Thies
+Khombole|Thies
+Pout|Thies
+Kayar|Thies
+Saint-Louis|Saint-Louis
+Dagana|Saint-Louis
+Richard-Toll|Saint-Louis
+Podor|Saint-Louis
+Ross-Bethio|Saint-Louis
+Diourbel|Diourbel
+Mbacke|Diourbel
+Touba|Diourbel
+Bambey|Diourbel
+Kaolack|Kaolack
+Guinguineo|Kaolack
+Nioro du Rip|Kaolack
+Kaffrine|Kaffrine
+Koungheul|Kaffrine
+Malem Hodar|Kaffrine
+Birkelane|Kaffrine
+Fatick|Fatick
+Foundiougne|Fatick
+Gossas|Fatick
+Sokone|Fatick
+Diofior|Fatick
+Passy|Fatick
+Louga|Louga
+Kebemer|Louga
+Linguere|Louga
+Dahra|Louga
+Matam|Matam
+Kanel|Matam
+Ourossogui|Matam
+Thilogne|Matam
+Semme|Matam
+Tambacounda|Tambacounda
+Bakel|Tambacounda
+Goudiry|Tambacounda
+Koumpentoum|Tambacounda
+Kedougou|Kedougou
+Salemata|Kedougou
+Saraya|Kedougou
+Kolda|Kolda
+Velingara|Kolda
+Medina Yoro Foulah|Kolda
+Sedhiou|Sedhiou
+Bounkiling|Sedhiou
+Goudomp|Sedhiou
+Ziguinchor|Ziguinchor
+Bignona|Ziguinchor
+Oussouye|Ziguinchor
+Thionck Essyl|Ziguinchor
+Cap Skirring|Ziguinchor
